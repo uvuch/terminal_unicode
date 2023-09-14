@@ -8,10 +8,10 @@ Another point of this project is to show how to output colorfull text and Unicod
 To run tests:
 
 1. Compile cpp modules to object files:
-   ** g++ -c *.cpp **
+   `g++ -c *.cpp`
 2. Compile  maintest and other cpp test module if you have them in separate files:
-   cd test; ** g++ -c *.cpp **
+   `cd test; ** g++ -c *.cpp`
 3. Link all object files into executable testmain:
-   g++ -o testmain \*.o ../\*.o
+   `g++ -o testmain \*.o ../\*.o`
 4. Run testmain:
-   ./testmain
+   `./testmain`
