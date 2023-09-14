@@ -15,3 +15,5 @@ To run tests:
    `g++ -o testmain *.o ../*.o`
 4. Run testmain:
    `./testmain`
+
+For color codes and console management ESC sequences see COLORS.md
