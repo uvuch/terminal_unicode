@@ -8,6 +8,11 @@ Example: `\033[33;1m` makes the output yellow (33) bold (1).
 - C++: `std::cout<<"\033[31;1;4mHello\033[0m";`
 - Python3: `print("\033[31;1;4mHello\033[0m")`
 - Bash: `echo -e "\033[31;1;4mHello\033[0m"`
+- CMake: a little bit more work envolved:
+  ```
+  string(ASCII 27 Esc)
+  message("${Esc}[31;1;4mHello${Esc}[0m")
+  ```
 
 where the first part makes the text red (31), bold (1), underlined (4) and the last part clears all this (0).
 
